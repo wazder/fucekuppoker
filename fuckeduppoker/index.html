@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tek Oyunculu Poker</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div id="table">
+    <h1>Tek Oyunculu Poker</h1>
+    <div id="player-area">
+      <h2>Senin Elin</h2>
+      <div id="player-hand" class="hand"></div>
+    </div>
+    <div id="community-area">
+      <h2>Ortak Kartlar</h2>
+      <div id="community-cards" class="hand"></div>
+    </div>
+    <div id="controls">
+      <button id="deal-btn">Deal</button>
+      <button id="check-btn" disabled>Check</button>
+      <button id="bet-btn" disabled>Bet</button>
+      <button id="fold-btn" disabled>Fold</button>
+    </div>
+  </div>
+
+  <!-- Poker el değerlendirmesi için -->
+  <script src="https://unpkg.com/poker-evaluator@latest"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
